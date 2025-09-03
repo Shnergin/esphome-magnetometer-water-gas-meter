@@ -303,7 +303,7 @@ sensor:
       entity_category: diagnostic
       on_raw_value:
         then:
-          - lambda:
+          - lambda: |-
               if (id(${prefix_id}axis).state == "x") id(${prefix_id}axis_value).publish_state(x);
               if (id(${prefix_id}calibrating)) {
                 id(${prefix_id}calibrating_axis_x_min) = min(id(${prefix_id}calibrating_axis_x_min), x);
@@ -333,7 +333,7 @@ sensor:
       entity_category: diagnostic
       on_raw_value:
         then:
-          - lambda:
+          - lambda: |-
               if (id(${prefix_id}axis).state == "z") id(${prefix_id}axis_value).publish_state(x);
               if (id(${prefix_id}calibrating)) {
                 id(${prefix_id}calibrating_axis_z_min) = min(id(${prefix_id}calibrating_axis_z_min), x);
