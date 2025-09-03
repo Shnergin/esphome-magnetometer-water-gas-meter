@@ -16,6 +16,7 @@ substitutions:
   i2c_sda: GPIO4  # D2
   i2c_address: 0x0D
   i2c_scan: false
+  i2c_frequency: 50kHz
 
   # Set these only if you have connected two QMC5883L to one device, see esphome-two-meters.yaml
   prefix_name: ''
@@ -267,7 +268,7 @@ i2c:
   - id: ${prefix_id}i2c_busf
     scl: ${i2c_scl}
     sda: ${i2c_sda}
-    frequency: 50kHz
+    frequency: ${i2c_frequency}
     scan: ${i2c_scan}
 
 sensor:
