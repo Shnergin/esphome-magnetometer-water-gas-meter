@@ -310,8 +310,8 @@ sensor:
                 id(${prefix_id}calibrating_axis_x_min) = min(id(${prefix_id}calibrating_axis_x_min), x);
                 id(${prefix_id}calibrating_axis_x_max) = max(id(${prefix_id}calibrating_axis_x_max), x);
               }
-      filters:
-        - delta: 3
+     # filters:
+     #   - delta: 3
     field_strength_y:
       id: ${prefix_id}qmc5883l_axis_y
       name: ${prefix_name}Magnetic Field Strength Y
@@ -325,8 +325,8 @@ sensor:
                 id(${prefix_id}calibrating_axis_y_min) = min(id(${prefix_id}calibrating_axis_y_min), x);
                 id(${prefix_id}calibrating_axis_y_max) = max(id(${prefix_id}calibrating_axis_y_max), x);
               }
-      filters:
-        - delta: 3
+     # filters:
+     #   - delta: 3
     field_strength_z:
       id: ${prefix_id}qmc5883l_axis_z
       name: ${prefix_name}Magnetic Field Strength Z
@@ -340,8 +340,8 @@ sensor:
                 id(${prefix_id}calibrating_axis_z_min) = min(id(${prefix_id}calibrating_axis_z_min), x);
                 id(${prefix_id}calibrating_axis_z_max) = max(id(${prefix_id}calibrating_axis_z_max), x);
               }
-      filters:
-        - delta: 3
+     # filters:
+     #   - delta: 3
     temperature:
       id: ${prefix_id}qmc5883l_temperature
       name: ${prefix_name}Temperature
